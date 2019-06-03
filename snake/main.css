@@ -1,0 +1,82 @@
+.snake {
+    background: gray;
+    position: relative;
+    overflow: hidden;
+}
+.position_bg{
+    display: flex;
+    justify-content:center;
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.score_count{
+    border:none;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+
+}
+.score{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.snake__item {
+    background: green;
+    border: 4px double whitesmoke;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1;
+    opacity: 1;
+    transition-property: left, top, opacity, background-color;
+    transition-timing-function: linear;
+    transition: 0.1ms;
+}
+
+.snake__item_die {
+    opacity: 0;
+    background-color: red;
+}
+
+.snake__item_in-stomach {
+    background: orange;
+    z-index: 3;
+}
+
+.snake__food {
+    position: absolute;
+    background: blue;
+    border: 3px double white;
+    box-sizing: border-box;
+    z-index: 2;
+    transition-property: opacity, background-color;
+    transition-timing-function: linear;
+    transition: 0.1ms;
+}
+
+.snake__item_die {
+    opacity: 0;
+    background-color: red;
+}
+footer{
+    margin-top: 20px;
+    display: flex;
+    align-items:baseline;
+}
+footer a{
+    margin-left: 10px;
+    font-size: 20px;
+    color: black;
+}
+footer a:hover{
+    color: grey;
+}
